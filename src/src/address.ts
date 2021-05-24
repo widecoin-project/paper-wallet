@@ -201,11 +201,11 @@ function INIT_AddressUtil()
             }
         }
 
-        let address = WorkerUtils.IsTestnet() ? "tb1" : "bc1";
+        let address = WorkerUtils.IsTestnet() ? "tb1" : "web1";
         for (let i = 0; i < result.length; ++i)
             address += bech32Chars[result[i]];
 
-        const checksum = Bech32CreateChecksum(WorkerUtils.IsTestnet() ? "tb" : "bc", result);
+        const checksum = Bech32CreateChecksum(WorkerUtils.IsTestnet() ? "tb" : "web", result);
         for (let i = 0; i < checksum.length; ++i)
             address += bech32Chars[checksum[i]];
 

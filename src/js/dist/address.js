@@ -30,7 +30,7 @@ function INIT_AddressUtil() {
         key_bytes.reverse();
         var sha_result_1 = CryptoHelper.SHA256(key_bytes);
         var ripemd_result_2 = CryptoHelper.RIPEMD160(sha_result_1);
-        var ripemd_extended = [WorkerUtils.IsTestnet() ? 0x6F : 0x00];
+        var ripemd_extended = [WorkerUtils.IsTestnet() ? 0x6F : 0x21];
         ripemd_extended.push.apply(ripemd_extended, ripemd_result_2);
         return WorkerUtils.Base58CheckEncode(ripemd_extended);
     }
@@ -50,7 +50,7 @@ function INIT_AddressUtil() {
         var keyhash = CryptoHelper.RIPEMD160(sha_result_1);
         var redeemscript = [0x00, 0x14];
         redeemscript.push.apply(redeemscript, keyhash);
-        var redeemscripthash = [WorkerUtils.IsTestnet() ? 0xC4 : 0x05];
+        var redeemscripthash = [WorkerUtils.IsTestnet() ? 0xC4 : 0x1E];
         redeemscripthash.push.apply(redeemscripthash, CryptoHelper.RIPEMD160(CryptoHelper.SHA256(redeemscript)));
         return WorkerUtils.Base58CheckEncode(redeemscripthash);
     }
@@ -114,10 +114,10 @@ function INIT_AddressUtil() {
                 result.push((value >> bits) & 0x1F);
             }
         }
-        var address = WorkerUtils.IsTestnet() ? "tb1" : "bc1";
+        var address = WorkerUtils.IsTestnet() ? "tb1" : "web1";
         for (var i = 0; i < result.length; ++i)
             address += bech32Chars[result[i]];
-        var checksum = Bech32CreateChecksum(WorkerUtils.IsTestnet() ? "tb" : "bc", result);
+        var checksum = Bech32CreateChecksum(WorkerUtils.IsTestnet() ? "tb" : "web", result);
         for (var i = 0; i < checksum.length; ++i)
             address += bech32Chars[checksum[i]];
         return address;
