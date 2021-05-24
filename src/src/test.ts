@@ -76,43 +76,43 @@ function InitTests()
             const testAddresses: TestAddressAndPrivateKey[] = [];
 
             testAddresses.push({
-                privateKey: "L3BqTud9apaZXAWU9u2zKUQwaSwRnx2MT3McTqKLGwQrd6NWxA7x",
+                privateKey: "PmXJQc6rBzPeoRPSKNkVMRSFmr43WVXWiW8D2csXqvoH7vCqtDGL",
                 addresses: {
-                    segwitAddress: "DAdTvd47zKjHGwKUDHBvcryDrjtMjeGMKg",
-                    bech32Address: "web1q454nqlp9aln53kt9h0asz6l2cg0vcpe93hu6jk",
-                    legacyAddress: "EYwY8d4etjVisQkfCVc4ayh82Fz3Bcnf1p"
+                    segwitAddress: "EWxXAc5JFQrp6mjTg6GX6ULf5RmB4stbLn",
+                    bech32Address: "wc1qkzjhw5l5h8umfzq236tk3gfgf5jwzftmm3wwqf",
+                    legacyAddress: "Wen42UfRp1Pq1NoQWQUVK25FbQHUT2JfbX"
                 }
             });
             testAddresses.push({
-                privateKey: "KwQDBB8owQe3K22YHT3V2QETKEiAX6KJMo7dn6WXvderUNymL6zg",
+                privateKey: "PgrKCE8M4t7xgodGUEBJkevRyvJJtVqYviWWTAhhsMvnHgMQEwLa",
                 addresses: {
-                    segwitAddress: "DQUAiXjCHq2KMyGZM4eE4JvbTLfLPNw8Gi",
-                    bech32Address: "web1qcz6a76d35ttcfdyydd0dpk7p27v5p99f3dh2jh",
-                    legacyAddress: "Eais79pN9pKAXLBzeewsq9GYtaDXSgWdTe"
+                    segwitAddress: "EYTgZd5mF2rUra4hKjWA9AFwC4i1KAaEDA",
+                    bech32Address: "wc1qchfun79t0geusfenamy6aw0e4jvz4u6uwq7dwz",
+                    legacyAddress: "Wgi3i5AM28vxjrfKtPvJZgFaUHdY6i3D84"
                 }
             });
             testAddresses.push({
-                privateKey: "L5k9t65Hgsz3UMFPbLAgDUL9NhpzFd5SSwcHtQSBZgLe8vnLqW2E",
+                privateKey: "PmQtECge49UdU7ZrerXA2pamVZrfBuBiJzWreueGwns2ddrodfx5",
                 addresses: {
-                    segwitAddress: "DSQQkgD1pj6XdsUA32c65HSU5R4kU3wzQh",
-                    bech32Address: "web1qmu39dx98nmvjj259cl9z0zg5z3d0sdvrxre9md",
-                    legacyAddress: "EdVjKE7rRLaHkUUVPiNFGW2E1xu4J2uwXx"
+                    segwitAddress: "ETvH4rx1i9uiZEKq1d6qs4jsPBDGb9Vf8b",
+                    bech32Address: "wc1qx2t0stpfjy8v32xu9hcj5zee7grwu4q78py69d",
+                    legacyAddress: "WTHXX4Mfaz7WTBkJ4V4TmKGfsWfBLUZypK"
                 }
             });
             testAddresses.push({
-                privateKey: "L5hRL78FhX26VWKFKW1Pt4q68FBmm2CyN8dfBvp1ZXa9fq6GCoBi",
+                privateKey: "PiJgDm99V4VbnzSCcPqaLxLtv8Zp2VMpx7kSZqwbgkjAQK2dgtUo",
                 addresses: {
-                    segwitAddress: "DMQDFdBAxLxsntqMQW6ohN9Zm7PMMMWZS7",
-                    bech32Address: "web1q55vysm2casd7kgxavw25kxc30fa23pqve5hqxf",
-                    legacyAddress: "EYCr5SeRv7D6qu7xozqZ85sJRLY94W2pAi"
+                    segwitAddress: "EafQ3UWZq6CQ652MKkXUZzZk9nPN8Uc4BH",
+                    bech32Address: "wc1qcuae32w2txarvuae7nkneh5rqw2rlmlg9qjrud",
+                    legacyAddress: "WgqUjvo4zU4pkRcsj5A6ZX63dWLCP6HcL5"
                 }
             });
             testAddresses.push({
-                privateKey: "KxHYFQGNs7vjTJZATBEyU9WTip9nTs7K1RxAdrgxqySUuwAiHp55",
+                privateKey: "PiPvrVemsRPKdv7FcPfx1zkzi9bMQ5Wd4X2sipU9sFjH7SWQcyEo",
                 addresses: {
-                    segwitAddress: "DERwNnfbEGYpXqJvpEwTHYS2mRVZE1WV7x",
-                    bech32Address: "web1q8d34u6gfnpecxjfkvrktcg2c04vu5gw5xjqt7g",
-                    legacyAddress: "ENZvQAdJwsbemJ6n2HiCEpGqjq3Y1KhhDj"
+                    segwitAddress: "EfcZhJ8uXj2mDqap9pQP54sLByeSu4Hzj5",
+                    bech32Address: "wc1q7p5nd2470m7twg5mhy0le6z76r5fpmsyj94hxw",
+                    legacyAddress: "WkbD6LDVU96Fd8TUpyuSyjVF7N88goSFo3"
                 }
             });
 
@@ -148,68 +148,68 @@ function InitTests()
 
             testCases.push({
                 password: "a",
-                encryptedPrivateKey: "6PnYMPyrRwX63YtaE4deQYcV3Z3tg4TW7zeNGLDWTB5VHVXZdpDWRkQ6A6",
-                encryptedPrivateKeyFromPrivateKey: "6PYWGmpCtGHbyQ2ZR7K4ECKYGCsE8v9giN3axnBQzN2kXmQmBp3P8PSeM5",
-                decryptedPrivateKey: "L1iy6dbbAS8eaB2wucjVuguexnifnEpoNypXsQxHEiUZnmfkQKHG",
+                encryptedPrivateKey: "6PnUzdM1kyfsH7j52z1nPx4EhPYVdSi9YDzMpfoUfL6m8RNmbZHxD5mTUy",
+                encryptedPrivateKeyFromPrivateKey: "6PYWGmpCtGHbyQ2ZR7K4ECKYGCsE8v9giN3axnBQzN2kXmQmBp3P8PSeM5", // not yet
+                decryptedPrivateKey: "Pkx8tsoDi5dAN7ULDfZ7axBEoHjyu2Q8ybGrC6SwTPGf9s1aoBSz",
                 addresses: {
-                    segwitAddress: "DNT7cRQMWYr5eNHamaLmCdp2JDghSUPBzV",
-                    bech32Address: "web1q2hsm3ggsluvlrgqg5wdug0t9hx65pl028syqwv",
-                    legacyAddress: "EQz1LGrpAgd2YmsscP78etaNzYf3VQcwtD"
+                    segwitAddress: "EWV7jeXksyYcWf4PuEcsuA8v6GGJRttdnm",
+                    bech32Address: "wc1quc9p798mmspny0xrk5qx6rxuxp4ga93twv47mv",
+                    legacyAddress: "WjeNRJAuV8DwvSM15WCvMveLEGrtZDip7b"
                 }
             });
             testCases.push({
                 password: "a",
-                encryptedPrivateKey: "6PnVRY6RLHoMmCvkKuyKrocTutBaonRp5yQVGwnLcnrreK3xAzGyCttQ15",
-                encryptedPrivateKeyFromPrivateKey: "6PYTLuvmnpCS7N3zvMfGEqrtvst8oip4nc7vBFoMu3YhW8LrGPKaM6nNrj",
-                decryptedPrivateKey: "L49RPSvbDsY8Xk5oBi2Xnrx8J7Y4i38AxLEiDAsAQndNgEzaG44T",
+                encryptedPrivateKey: "6PnUKdALdbXPTAZ3eGvzPXs2gtB6MfpDVvvHgXYVzYSL4ZZ615j3R583Mw",
+                encryptedPrivateKeyFromPrivateKey: "6PYTLuvmnpCS7N3zvMfGEqrtvst8oip4nc7vBFoMu3YhW8LrGPKaM6nNrj", // not yet
+                decryptedPrivateKey: "Pi9UszR9y1NDpF1g1MxXcCyXtQEbB9UU9Zz2B2qzJP1qzf1dmH45",
                 addresses: {
-                    segwitAddress: "DJtAV13dTS67ruAo5J1Zb3EGm2H7yCXVqt",
-                    bech32Address: "web1qt3zg0nvaqm4d3q2ye0lewnmsmqyh8eqnvchgy0",
-                    legacyAddress: "ERZmkpAEnxfhoqG52XARmJRFwcrYpw5YX2"
+                    segwitAddress: "ELHVhErm5WwcoHtYnUsx5NLsbHVuvAYZ1c",
+                    bech32Address: "wc1qnvmrthze59w0uc9jqp0c4yp8hny2qhe6mf9rh9",
+                    legacyAddress: "WcpiZGMhGfdRWz9HfhKxuhSZkZEWhyVcmX"
                 }
             });
             testCases.push({
                 password: "Test Password 1234",
-                encryptedPrivateKey: "6PnVGb4eGJi2SoiXA8xJNhkWm3HcVKtRqPo7n2rWEX4QyRmSbrrZnKD3me",
-                encryptedPrivateKeyFromPrivateKey: "6PYTBxtzid2TotMFVQJcjtJ7U3wVVkL3yZWEm1zo37bbY31vaizYWf253o",
-                decryptedPrivateKey: "KzLEXSxbPbmpqUMUeEWdx5xgVbwDdBpSHRZzo4DScyJLqwrvZiZo",
+                encryptedPrivateKey: "6PnSbif4GKBTscrrAL4ozpTk516r5NPDdx1zTk3jkNfmhf3s4yuqEsq8za",
+                encryptedPrivateKeyFromPrivateKey: "6PYTBxtzid2TotMFVQJcjtJ7U3wVVkL3yZWEm1zo37bbY31vaizYWf253o", // not yet
+                decryptedPrivateKey: "PiZYc5LfEGw6oGnrM8LraCL2E9uTU1qJcJZzAqtR1wrbF9vFAVyy",
                 addresses: {
-                    segwitAddress: "DE2GdQ94GSX6bXZEUgpPrpi7JhB8K4229B",
-                    bech32Address: "web1q58uxe6yh2fqclu2zmvg8eavjsqnnc7dyudnm6s",
-                    legacyAddress: "EXvKtNQpdDurYbrh5JHNfNGMyzbi7RzdLy"
+                    segwitAddress: "EKxfsVKRUXvz8HnaWjsAFjn5GeRC3Y25BJ",
+                    bech32Address: "wc1q3fzl6wzuqnr8mq5sad7l64sftu2dcketgcwkh8",
+                    legacyAddress: "WbH9yLA1kDeKTxMxdnoxWww8ErYiuocwnH"
                 }
             });
             testCases.push({
                 password: "Test Password 1234",
-                encryptedPrivateKey: "6PnWy4Wxu13vHD2mi1kAda7DuD58CLLMSL75keE4SANfSXFCzPnLXD4UPg",
-                encryptedPrivateKeyFromPrivateKey: "6PYUtSMKLHijKpqFyvXarqMAx84UR476iHfkLWGxh3LgeuX6Nghhijuzcm",
-                decryptedPrivateKey: "KzkL7LDyjFErKQmxD96Uw6Q6yL9EgDT7YmaBf8PY3vZss9c6xW3r",
+                encryptedPrivateKey: "6PnUiM9Vq7LbPGpVZX8qqTL8L8SajiijSeBwiAbJMCtCsfU18oL8oagtxw",
+                encryptedPrivateKeyFromPrivateKey: "6PYUtSMKLHijKpqFyvXarqMAx84UR476iHfkLWGxh3LgeuX6Nghhijuzcm", // not yet
+                decryptedPrivateKey: "Peyu6ff8q8A88rPSratvJ6wJ1fDdLSeBh72L2sCvBhjD66CFQvcy",
                 addresses: {
-                    segwitAddress: "DG7Ch2FgMcK5pm6Udyc9xNRdw9KRweoh47",
-                    bech32Address: "web1qz62dhzuftu29qztufmprtcxs7wk4m8d3l2uanp",
-                    legacyAddress: "EKDJgcRzm1A3pHiSf1iEVbRf9cSLXNrMht"
+                    segwitAddress: "EgS4RDjwrDDzHomCrNiSNWH5NGGuYAZuoo",
+                    bech32Address: "wc1q8r4fpktl9an4lttmp7aqet0gyr2crfz7weg240",
+                    legacyAddress: "WTryib7gZvHWnZet4aUaF1QFdea3sgzQ2o"
                 }
             });
             testCases.push({
                 password: "😂👌🔥💯💯💯🅱",
-                encryptedPrivateKey: "6PnMqQQdg4smPy3VTp1fGSjFTywyaxmR95MKoV7FJZ8V6bnuCBNmgHsH7B",
-                encryptedPrivateKeyFromPrivateKey: "6PYKknEz8gZLf63HuiHUExku1WH1jt33ehFKj6viqwmVxWFAanMAxNqpun",
-                decryptedPrivateKey: "L1pwbhHmpCP2HBpg4iXciB24cqTdDAathEuWEKwDZi8kxftmb1r9",
+                encryptedPrivateKey: "6PnTxkhjN99wEqo2b4rMZJAHexg9SQ2FxvxQQQStByec9EUUqutDnvFYKP",
+                encryptedPrivateKeyFromPrivateKey: "6PYKknEz8gZLf63HuiHUExku1WH1jt33ehFKj6viqwmVxWFAanMAxNqpun", // not yet
+                decryptedPrivateKey: "PmPJd3JrtoKP7T1aZSpp2mcVzvRUssru54Gii3yNJc7ravTo6j8s",
                 addresses: {
-                    segwitAddress: "DLGK5cVs39DirzLvxCTkxawhNXh2sB11P5",
-                    bech32Address: "web1qatdw8u69493fj0ps98aaejzgtuvuryqpqnfymj",
-                    legacyAddress: "EeZhqFEjcGe67o1NtDfR9s91FJQDquBcTY"
+                    segwitAddress: "ELHGy9zVW9mLTgL4pdw3HAnR7KWFvNkyow",
+                    bech32Address: "wc1q6h72cewj0h4j7auhs3zf0epgn6d22y0785ac7t",
+                    legacyAddress: "WiBVVqySibJQbLSVRS3ka3kh6gSwJBwABN"
                 }
             });
             testCases.push({
                 password: "😂👌🔥💯💯💯🅱",
-                encryptedPrivateKey: "6PnMurgcH6CqhnGSeB6tAons51gniWVQToXgf65T3zSPeQK8UGojRAhmxy",
-                encryptedPrivateKeyFromPrivateKey: "6PYKqEWxjimL8o7cQghwBwF13wNW7SWr4PNqi8eDHNM55G7RiRQvRLcwAH",
-                decryptedPrivateKey: "Kz6LXhZeMdCLYpX5CzjhVY3DRBMTuW1qwNW5AAiihZaQbSUkHyy6",
+                encryptedPrivateKey: "6PnXGq35PBZJxSrPQmEo42AhG4krxN7xaWM798oz8LyzbDcqeHSJDxP7Jq",
+                encryptedPrivateKeyFromPrivateKey: "6PYKqEWxjimL8o7cQghwBwF13wNW7SWr4PNqi8eDHNM55G7RiRQvRLcwAH", // not yet
+                decryptedPrivateKey: "PeQ9ztj6G49RrH8Yv1CQHU2wehj9APznVsFUqKB9pgQymH1rRHYf",
                 addresses: {
-                    segwitAddress: "DEhWg8W9k9TSKwfLk7WZsgPiwGsz9LKEs1",
-                    bech32Address: "web1q29w6y7p8exx4sa7m5avqltc2vnaajpycd422v6",
-                    legacyAddress: "EQa8PyK7sTDxUpuVSabvvpbnqhRXjNGNDW"
+                    segwitAddress: "EYpKM9qCzSw1VfuHuEmqhZ54G9LvpPtTEB",
+                    bech32Address: "wc1q6y3z8ttsgztx226jeeuf0tf3yv3jral2pardc7",
+                    legacyAddress: "Whjq14ihUk9eTpGQYsQEmSKjEs3DfYM1sv"
                 }
             });
 
