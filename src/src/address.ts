@@ -45,7 +45,7 @@ function INIT_AddressUtil()
         }
 
         privateKey.push(...temp);
-        privateKey.push(WorkerUtils.IsTestnet() ? 0xEF : 0x80);
+        privateKey.push(WorkerUtils.IsTestnet() ? 0xEF : 0x99); // updated for wcn
         privateKey.reverse();
         return WorkerUtils.Base58CheckEncode(privateKey);
     }
