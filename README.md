@@ -1,5 +1,5 @@
 # Widecoin address generator
-Available at https://paperwallet.widecoin.org
+Available at https://widecoin.org/paper-wallet/index.html
 
 ## Features:
 *  Create bech32, segwit (p2sh-p2wpkh), and legacy (p2pkh) addresses
