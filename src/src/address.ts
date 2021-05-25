@@ -45,7 +45,7 @@ function INIT_AddressUtil()
         }
 
         privateKey.push(...temp);
-        privateKey.push(WorkerUtils.IsTestnet() ? 0xEF : 0x80);
+        privateKey.push(WorkerUtils.IsTestnet() ? 0xEF : 0x99); // updated for wcn
         privateKey.reverse();
         return WorkerUtils.Base58CheckEncode(privateKey);
     }
@@ -75,7 +75,7 @@ function INIT_AddressUtil()
         key_bytes.reverse();
         const sha_result_1 = CryptoHelper.SHA256(key_bytes);
         const ripemd_result_2 = CryptoHelper.RIPEMD160(sha_result_1);
-        const ripemd_extended = [WorkerUtils.IsTestnet() ? 0x6F : 0x00];
+        const ripemd_extended = [WorkerUtils.IsTestnet() ? 0x6F : 0x49];
         ripemd_extended.push(...ripemd_result_2);
 
         return WorkerUtils.Base58CheckEncode(ripemd_extended);
@@ -104,7 +104,7 @@ function INIT_AddressUtil()
         const redeemscript = [0x00, 0x14];
         redeemscript.push(...keyhash);
 
-        const redeemscripthash = [WorkerUtils.IsTestnet() ? 0xC4 : 0x05];
+        const redeemscripthash = [WorkerUtils.IsTestnet() ? 0xC4 : 0x21];
 
         redeemscripthash.push(...CryptoHelper.RIPEMD160(CryptoHelper.SHA256(redeemscript)));
 
@@ -201,11 +201,11 @@ function INIT_AddressUtil()
             }
         }
 
-        let address = WorkerUtils.IsTestnet() ? "tb1" : "bc1";
+        let address = WorkerUtils.IsTestnet() ? "tb1" : "wc1";
         for (let i = 0; i < result.length; ++i)
             address += bech32Chars[result[i]];
 
-        const checksum = Bech32CreateChecksum(WorkerUtils.IsTestnet() ? "tb" : "bc", result);
+        const checksum = Bech32CreateChecksum(WorkerUtils.IsTestnet() ? "tb" : "wc", result);
         for (let i = 0; i < checksum.length; ++i)
             address += bech32Chars[checksum[i]];
 
